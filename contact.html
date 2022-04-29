@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h3>Details</h3>
+    <p>
+        Address : Fictional Address <br>
+        Phone : 1234567890 <br>
+        Email-id : mygmail@gmail.com <br>
+        <form action="mailto:apurbasundar2002@gmail.com" enctype="text/plain">
+            <label for="mail">E-mail me : </label>
+            <input type="submit" name="mail" id="mail" value = "Click Here">
+        </form>
+    </p>
+    <hr size="4" noshade="">
+    <form action="apu.html">
+        <fieldset>
+            <legend>Fill up the Form</legend>
+        <label for="name">Enter name : </label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="email">Enter Email-id :</label>
+        <input type="email" required>
+        <br><br>
+        <label for="phone">Enter Phone :</label>
+        <input type="text" pattern="[0-9]{10}" placeholder="1234567890" maxlength="10" minlength="10">
+       <br><br>
+        <label for="">Do you want to be a member ? </label>
+        <input type="radio" required> <br><br>
+        <label for="profession">What is Your profession : </label>
+        <select name="profession" id="profession">
+            <option value="">None</option>
+            <option value="student">Student</option>
+            <option value="salaried">Salaried</option>
+            <option value="self employed">Self Employed</option>
+            <option value="others">Others</option>
+        </select> <br>
+       </fieldset>
+       <fieldset>
+           <legend>Your Message</legend>
+        <label for="msg"></label> <br><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea> <br>
+       </fieldset>
+       
+    <button type="button" onclick="alert('Your Details are saved succesfully.')">Click Here to Submit Your Details</button> 
+    <input type="submit" name="" id="" value="Click here to go to Homepage">
+
+    </form>
+</body>
+</html>
